@@ -3,32 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Vue.js目录结构 | Qu的博客</title>
+    <title>Qu的博客</title>
     <meta name="generator" content="VuePress 1.7.1">
     <link rel="icon" href="/blog/favicon.ico">
     <link rel="manifest" href="/blog/manifest.json">
-    <meta name="description" content="学习记录">
+    <meta name="description" content="学习笔记">
     
-    <link rel="preload" href="/blog/assets/css/0.styles.29877238.css" as="style"><link rel="preload" href="/blog/assets/js/app.b5dc5c72.js" as="script"><link rel="preload" href="/blog/assets/js/2.4086cec5.js" as="script"><link rel="preload" href="/blog/assets/js/8.1d890881.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.79963925.js"><link rel="prefetch" href="/blog/assets/js/11.faafaa80.js"><link rel="prefetch" href="/blog/assets/js/3.c0464155.js"><link rel="prefetch" href="/blog/assets/js/4.f78c5003.js"><link rel="prefetch" href="/blog/assets/js/5.fb2f9f71.js"><link rel="prefetch" href="/blog/assets/js/6.c17db71a.js"><link rel="prefetch" href="/blog/assets/js/7.59107e5b.js"><link rel="prefetch" href="/blog/assets/js/9.3f3f8f27.js">
-    <link rel="stylesheet" href="/blog/assets/css/0.styles.29877238.css">
+    <link rel="preload" href="/blog/assets/css/0.styles.5b043913.css" as="style"><link rel="preload" href="/blog/assets/js/app.2ea133cd.js" as="script"><link rel="preload" href="/blog/assets/js/2.d334275c.js" as="script"><link rel="preload" href="/blog/assets/js/11.e424d304.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.b6e49f5d.js"><link rel="prefetch" href="/blog/assets/js/12.a7bfa3c2.js"><link rel="prefetch" href="/blog/assets/js/3.3ac658fc.js"><link rel="prefetch" href="/blog/assets/js/4.4f8c29dd.js"><link rel="prefetch" href="/blog/assets/js/5.7dad3f01.js"><link rel="prefetch" href="/blog/assets/js/6.3a039a9c.js"><link rel="prefetch" href="/blog/assets/js/7.ea201803.js"><link rel="prefetch" href="/blog/assets/js/8.b8d4e247.js"><link rel="prefetch" href="/blog/assets/js/9.1701b9df.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.5b043913.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Qu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
   主页
-</a></div><div class="nav-item"><a href="/blog/vue/prepare/" class="nav-link">
+</a></div><div class="nav-item"><a href="/blog/vue/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
   vue
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
 </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
   主页
-</a></div><div class="nav-item"><a href="/blog/vue/prepare/" class="nav-link">
+</a></div><div class="nav-item"><a href="/blog/vue/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
   vue
-</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>初步认识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/vue/prepare/" class="sidebar-link">Introduction</a></li><li><a href="/blog/vue/prepare/structure.html" class="sidebar-link">Vue.js目录结构</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-js目录结构"><a href="#vue-js目录结构" class="header-anchor">#</a> Vue.js目录结构</h1> <div class="language- extra-class"><pre class="language-text"><code>src
-├── compiler        # 编译相关 
-├── core            # 核心代码 
-├── platforms       # 不同平台的支持
-├── server          # 服务端渲染
-├── sfc             # .vue 文件解析
-├── shared          # 共享代码
-</code></pre></div><h2 id="compiler"><a href="#compiler" class="header-anchor">#</a> compiler</h2> <p>compiler 目录包含 Vue.js 所有编译相关的代码。它包括把模板解析成 ast 语法树，ast 语法树优化，代码生成等功能。</p> <p>编译的工作可以在构建时做（借助 webpack、vue-loader 等辅助插件）；也可以在运行时做，使用包含构建功能的 Vue.js。显然，编译是一项耗性能的工作，所以更推荐前者——离线编译。</p> <h2 id="core"><a href="#core" class="header-anchor">#</a> core</h2> <p>core 目录包含了 Vue.js 的核心代码，包括内置组件、全局 API 封装，Vue 实例化、观察者、虚拟 DOM、工具函数等等。</p> <h2 id="platform"><a href="#platform" class="header-anchor">#</a> platform</h2> <p>Vue.js 是一个跨平台的 MVVM 框架，它可以跑在 web 上，也可以配合 weex 跑在 native 客户端上。platform 是 Vue.js 的入口，2 个目录代表 2 个主要入口，分别打包成运行在 web 上和 weex 上的 Vue.js。</p> <h2 id="server"><a href="#server" class="header-anchor">#</a> server</h2> <p>Vue.js 2.0 支持了服务端渲染，所有服务端渲染相关的逻辑都在这个目录下。注意：这部分代码是跑在服务端的 Node.js，不要和跑在浏览器端的 Vue.js 混为一谈。</p> <p>服务端渲染主要的工作是把组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记&quot;混合&quot;为客户端上完全交互的应用程序。</p> <h2 id="sfc"><a href="#sfc" class="header-anchor">#</a> sfc</h2> <p>通常我们开发 Vue.js 都会借助 webpack 构建， 然后通过 .vue 单文件来编写组件。</p> <p>这个目录下的代码逻辑会把 .vue 文件内容解析成一个 JavaScript 的对象。</p> <h2 id="shared"><a href="#shared" class="header-anchor">#</a> shared</h2> <p>Vue.js 会定义一些工具方法，这里定义的工具方法都是会被浏览器端的 Vue.js 和服务端的 Vue.js 所共享的。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/blog/assets/js/app.b5dc5c72.js" defer></script><script src="/blog/assets/js/2.4086cec5.js" defer></script><script src="/blog/assets/js/8.1d890881.js" defer></script>
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/vue/" aria-current="page" class="active sidebar-link">Vue目录</a></li><li><a href="/blog/vue/prepare/acquaintance.html" class="sidebar-link">初步认识</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="初步认识"><a href="#初步认识" class="header-anchor">#</a> 初步认识</h1></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/vue/prepare/acquaintance.html">
+        初步认识
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.2ea133cd.js" defer></script><script src="/blog/assets/js/2.d334275c.js" defer></script><script src="/blog/assets/js/11.e424d304.js" defer></script>
   </body>
 </html>
