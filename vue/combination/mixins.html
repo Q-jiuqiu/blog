@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>混入 | Qu的博客</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/blog/favicon.ico">
+    <link rel="manifest" href="/blog/manifest.json">
+    <meta name="description" content="学习笔记">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.be2dfb48.css" as="style"><link rel="preload" href="/blog/assets/js/app.b31ef8bf.js" as="script"><link rel="preload" href="/blog/assets/js/2.d334275c.js" as="script"><link rel="preload" href="/blog/assets/js/14.eccf2a6c.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.c98eaea3.js"><link rel="prefetch" href="/blog/assets/js/11.dd23a199.js"><link rel="prefetch" href="/blog/assets/js/12.ca6e53dd.js"><link rel="prefetch" href="/blog/assets/js/13.4ac74636.js"><link rel="prefetch" href="/blog/assets/js/15.a00cd71a.js"><link rel="prefetch" href="/blog/assets/js/16.46be5c12.js"><link rel="prefetch" href="/blog/assets/js/17.0563e63c.js"><link rel="prefetch" href="/blog/assets/js/18.b211d12e.js"><link rel="prefetch" href="/blog/assets/js/19.6b663f52.js"><link rel="prefetch" href="/blog/assets/js/20.c03f8416.js"><link rel="prefetch" href="/blog/assets/js/21.c744b622.js"><link rel="prefetch" href="/blog/assets/js/22.a46d708b.js"><link rel="prefetch" href="/blog/assets/js/23.65df21bc.js"><link rel="prefetch" href="/blog/assets/js/24.55cf1c0c.js"><link rel="prefetch" href="/blog/assets/js/25.f147caa9.js"><link rel="prefetch" href="/blog/assets/js/26.9e846d68.js"><link rel="prefetch" href="/blog/assets/js/3.1aefee10.js"><link rel="prefetch" href="/blog/assets/js/4.c73b54a0.js"><link rel="prefetch" href="/blog/assets/js/5.2e6bed6e.js"><link rel="prefetch" href="/blog/assets/js/6.3a039a9c.js"><link rel="prefetch" href="/blog/assets/js/7.3dfe55d8.js"><link rel="prefetch" href="/blog/assets/js/8.2de49e38.js"><link rel="prefetch" href="/blog/assets/js/9.1ce2b37c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.be2dfb48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Qu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/vue/" aria-current="page" class="sidebar-link">Vue目录</a></li><li><a href="/blog/vue/prepare/acquaintance.html" class="sidebar-link">初步认识</a></li><li><a href="/blog/vue/example/" class="sidebar-link">Vue实例</a></li><li><a href="/blog/vue/lifeCycle/" class="sidebar-link">生命周期</a></li><li><a href="/blog/vue/computeandwatch/" class="sidebar-link">computed和watch</a></li><li><a href="/blog/vue/ifAndKey/" class="sidebar-link">条件渲染和key</a></li><li><a href="/blog/vue/eventsHandle/" class="sidebar-link">事件处理</a></li><li><a href="/blog/vue/componentFoindation/" class="sidebar-link">组件基础</a></li><li><a href="/blog/vue/componentFoindation/customEvents.html" class="sidebar-link">自定义事件</a></li><li><a href="/blog/vue/combination/" aria-current="page" class="sidebar-link">可复用性&amp;组合</a></li><li><a href="/blog/vue/combination/mixins.html" aria-current="page" class="active sidebar-link">混入</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue/combination/mixins.html#选项合并" class="sidebar-link">选项合并</a></li></ul></li><li><a href="/blog/vue/combination/customInstruction.html" class="sidebar-link">自定义指令</a></li><li><a href="/blog/vue/combination/render.html" class="sidebar-link">渲染函数</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="混入"><a href="#混入" class="header-anchor">#</a> 混入</h1> <h3 id="局部混入"><a href="#局部混入" class="header-anchor">#</a> 局部混入</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>combination<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>可复用性&amp;组合<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mixins<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>{{ mixins.num }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>  // 123 --&gt;有同名选项时,组件内的优先
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>{{ mixins.name }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span> // zhnag
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> mixins <span class="token keyword">from</span> <span class="token string">&quot;./mixins/mixins&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  mixins<span class="token operator">:</span> <span class="token punctuation">[</span>mixins<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      mixins<span class="token operator">:</span> <span class="token punctuation">{</span>
+        num<span class="token operator">:</span> <span class="token number">123</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">beforeCreate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;==组价 - beforeCreated==&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>mixins.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      mixins<span class="token operator">:</span> <span class="token punctuation">{</span>
+        num<span class="token operator">:</span> <span class="token number">234</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">&quot;zhang&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">beforeCreate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;==mixins - beforeCreated==&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="全局混入"><a href="#全局混入" class="header-anchor">#</a> 全局混入</h3> <div class="language- extra-class"><pre class="language-text"><code>// 为自定义的选项 'myOption' 注入一个处理器。
+Vue.mixin({
+  created: function () {
+    var myOption = this.$options.myOption
+    if (myOption) {
+      console.log(myOption)
+    }
+  }
+})
+
+new Vue({
+  myOption: 'hello!'
+})
+// =&gt; &quot;hello!&quot;
+</code></pre></div><h2 id="选项合并"><a href="#选项合并" class="header-anchor">#</a> 选项合并</h2> <p>当组件和混入对象含有同名选项时，这些选项将以恰当的方式进行“合并”。</p> <ul><li>数据对象(data)在内部会进行递归合并，并在发生冲突时以组件数据优先。</li> <li>同名钩子函数将合并为一个数组，因此都将被调用。另外，混入对象的钩子将在组件自身钩子<strong>之前</strong>调用。</li> <li>值为对象的选项，例如 <code>methods</code>、<code>components</code> 和 <code>directives</code>，将被合并为同一个对象。两个对象键名冲突时，取组件对象的键值对。</li> <li><code>Vue.extend()</code> 也使用同样的策略进行合并。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/vue/combination/" class="prev router-link-active">
+        可复用性&amp;组合
+      </a></span> <span class="next"><a href="/blog/vue/combination/customInstruction.html">
+        自定义指令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.b31ef8bf.js" defer></script><script src="/blog/assets/js/2.d334275c.js" defer></script><script src="/blog/assets/js/14.eccf2a6c.js" defer></script>
+  </body>
+</html>

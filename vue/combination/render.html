@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>渲染函数 &amp; JSX | Qu的博客</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/blog/favicon.ico">
+    <link rel="manifest" href="/blog/manifest.json">
+    <meta name="description" content="学习笔记">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.be2dfb48.css" as="style"><link rel="preload" href="/blog/assets/js/app.b31ef8bf.js" as="script"><link rel="preload" href="/blog/assets/js/2.d334275c.js" as="script"><link rel="preload" href="/blog/assets/js/15.a00cd71a.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.c98eaea3.js"><link rel="prefetch" href="/blog/assets/js/11.dd23a199.js"><link rel="prefetch" href="/blog/assets/js/12.ca6e53dd.js"><link rel="prefetch" href="/blog/assets/js/13.4ac74636.js"><link rel="prefetch" href="/blog/assets/js/14.eccf2a6c.js"><link rel="prefetch" href="/blog/assets/js/16.46be5c12.js"><link rel="prefetch" href="/blog/assets/js/17.0563e63c.js"><link rel="prefetch" href="/blog/assets/js/18.b211d12e.js"><link rel="prefetch" href="/blog/assets/js/19.6b663f52.js"><link rel="prefetch" href="/blog/assets/js/20.c03f8416.js"><link rel="prefetch" href="/blog/assets/js/21.c744b622.js"><link rel="prefetch" href="/blog/assets/js/22.a46d708b.js"><link rel="prefetch" href="/blog/assets/js/23.65df21bc.js"><link rel="prefetch" href="/blog/assets/js/24.55cf1c0c.js"><link rel="prefetch" href="/blog/assets/js/25.f147caa9.js"><link rel="prefetch" href="/blog/assets/js/26.9e846d68.js"><link rel="prefetch" href="/blog/assets/js/3.1aefee10.js"><link rel="prefetch" href="/blog/assets/js/4.c73b54a0.js"><link rel="prefetch" href="/blog/assets/js/5.2e6bed6e.js"><link rel="prefetch" href="/blog/assets/js/6.3a039a9c.js"><link rel="prefetch" href="/blog/assets/js/7.3dfe55d8.js"><link rel="prefetch" href="/blog/assets/js/8.2de49e38.js"><link rel="prefetch" href="/blog/assets/js/9.1ce2b37c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.be2dfb48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Qu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/vue/" aria-current="page" class="sidebar-link">Vue目录</a></li><li><a href="/blog/vue/prepare/acquaintance.html" class="sidebar-link">初步认识</a></li><li><a href="/blog/vue/example/" class="sidebar-link">Vue实例</a></li><li><a href="/blog/vue/lifeCycle/" class="sidebar-link">生命周期</a></li><li><a href="/blog/vue/computeandwatch/" class="sidebar-link">computed和watch</a></li><li><a href="/blog/vue/ifAndKey/" class="sidebar-link">条件渲染和key</a></li><li><a href="/blog/vue/eventsHandle/" class="sidebar-link">事件处理</a></li><li><a href="/blog/vue/componentFoindation/" class="sidebar-link">组件基础</a></li><li><a href="/blog/vue/componentFoindation/customEvents.html" class="sidebar-link">自定义事件</a></li><li><a href="/blog/vue/combination/" aria-current="page" class="sidebar-link">可复用性&amp;组合</a></li><li><a href="/blog/vue/combination/mixins.html" class="sidebar-link">混入</a></li><li><a href="/blog/vue/combination/customInstruction.html" class="sidebar-link">自定义指令</a></li><li><a href="/blog/vue/combination/render.html" aria-current="page" class="active sidebar-link">渲染函数</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="渲染函数-jsx"><a href="#渲染函数-jsx" class="header-anchor">#</a> 渲染函数 &amp; JSX</h1></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/vue/combination/customInstruction.html" class="prev">
+        自定义指令
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.b31ef8bf.js" defer></script><script src="/blog/assets/js/2.d334275c.js" defer></script><script src="/blog/assets/js/15.a00cd71a.js" defer></script>
+  </body>
+</html>
